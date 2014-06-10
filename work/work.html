@@ -1,0 +1,23 @@
+<head>
+  <title>work</title>
+</head>
+<body>
+	<center>
+  {{> main}}
+  </center>
+</body>
+<template name="main">
+	<h1>Clicks4Change</h1>
+	<br><br><br><br><br><br><br><br>
+	<span id="clicks" style="visibility: hidden;">0</span><br>
+<button class="submit" onClick="show();">Click</button>
+<script type="text/javascript">
+function show(){
+	document.getElementById("clicks").style.visibility = "visible";
+}
+setInterval(function() {
+     window.location.reload();
+ }, 120000); 
+</script>
+</template>
+
